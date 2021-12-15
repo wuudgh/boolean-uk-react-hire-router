@@ -1,7 +1,8 @@
-import PeopleListItem from "./PeopleListItem"
+import PeopleListItem from "./PeopleListItem";
+import { Link } from "react-router-dom";
 
 function PeopleList(props) {
-  const { people } = props
+  const { people } = props;
 
   return (
     <ul>
@@ -9,7 +10,7 @@ function PeopleList(props) {
         <PeopleListItem key={index} person={person} />
       ))}
     </ul>
-  )
+  );
 }
 
-export default PeopleList
+export default PeopleList;
